@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+}
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+.collapsible__heading{
+    margin-top: 0;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+}
+.collapsible--chevron{
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.collapsible--expanded .collapsible--chevron{
+    transform: rotate(0deg);
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+    
+}
+.list{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav{
+    background: #000;
+    color: white;font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+    align-items: center;
+}
+.nav__list{
+    width: 100%;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+.nav__item{
+    padding: 0.5rem 2rem;
+}
+.nav__item > a{
+    color: #d2d0db;
+    transition: color 0.3s;
+}
+.nav__item > a:hover{
+    color: #fff;
+}
+.nav__toggler{
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+}
+.nav.collapsible--expanded .nav__toggler{
+    opacity: 1;
+    box-shadow: 0 0 0 3px #666;
+    border-radius: 5px;
+}
+@media screen and (min-width:768px) {
+    .nav__toggler{
+        display: none;
+    }
+    .nav__list{
+        width: auto;
+        display: flex;
+        font-size: 0.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+    .nav__item{
+        border: 0;
+    }
+}
+body{
+    background-image: url(../images/background.jpg.jpg);
+    
+}
+.navbar{
+    position: fixed;
+    min-width: 100%;
+}
+.hero_title{
+    color: silver;
+    font-size: 3.8rem;
+    text-align: center;
+    padding-top: 16%;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.hero-text{
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+}
+.hero_title:hover{
+    color: white;
+    opacity: 1;
+}
+.hero-text:hover{
+    color: silver;
+    opacity: 1;
+}
+@media screen and (max-width:767px) {
+    .hero-text{
+        font-size: 1.3rem;
+    }
+    .hero_title{
+        font-size: 1.8rem;
+        padding-top: 25%;
+    }
+}
+#about{
+    min-height: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+.me{
+    font-size: 5rem;
+    padding-top: 19%;
+    padding-bottom: 0;
+}
+.two{
+    text-align: center;
+    color: white;
+}
+.image{
+    float: left;
+    width:30vw;
+    height: 65vh;
+    border-radius: 25%;
+    padding-right: 1px;
+    border: 0;
+    text-align: left;
+    margin-top: 0;
+}
+ul{
+    list-style: none;
+}
+.three{
+    font-size: 2.5rem; 
+}
+.four{
+    padding-top: 10rem;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .image{
+        height: 40vh;
+        width: 60vw;
+        padding-right: 0.5px;
+        border-radius: 25%;
+        
+    }
+    .image{
+        text-align: center;
+        float: none;
+        margin-bottom: 0;
+    }
+    .three{
+        font-size: 1.7rem;
+    }
+    .porto{
+        font-size: 1.8rem;
+    }
+    .four{
+        margin-top: 0;
+        padding-top: 2rem;
+    }     
+}
+#portofolio{
+    min-height: 100%;
+    margin-top: 15%;
+}
+.porto{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top:0;
+    margin-left: 0;
+    
+}
+.box{
+    width: 29rem;
+    height: 17rem;
+    background: black;
+    margin: 0.6rem;
+    color: white;
+    border: 1px solid silver;
+    padding-left: 1rem;
+}
+h1{
+    font-size: 1.9rem;
+}
+.box h1{
+    padding-left: 8px;
+}
+p{
+    font-size: 1.1rem;
+}
+.box p{
+    padding-left: 6px;
+}
+.foot{
+    background: green;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+      
+}
+@media screen and (max-width:767px) {
+    .porto{
+        margin-top: 0;
+    }
+    #portofolio{
+        margin-top: 0;
+    }
+    .foot{
+        margin-bottom: 0.3rem;
+    }
+    .box{
+        width: 25rem;
+        height: 19rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+#services{
+    min-height: 100%;
+}
+.squares{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+}
+.square{
+    width: 29rem;
+    height: 17rem;
+    background: black;
+    color: white;
+    border: 1px solid silver;
+    margin: 0.4rem;
+}
+.serv{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+.heading{
+    font-size: 1.9rem;
+}
+.square .heading{
+    padding-left: 10px;
+}
+.text{
+    font-size: 1.2rem;
+}
+.square .text{
+    padding-left: 5px;
+}
+.container-form{
+    text-align: center;
+    padding-top: 10%;
+    min-height: 100%;
+}
+.cont{
+    font-size: 5rem;
+    color: white;
+    margin-top: 0;
+}
+.na{
+    font-size: 3rem;
+    color: white;
+}
+.inp{
+    font-size: 3rem;
+    border-radius: 10px;
+    border: 0.1rem solid white;
+}
+.em{
+    font-size: 3rem;
+    padding-top: 5%;
+    color: white;
+}
+.sub{
+    margin-top: 2rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    color: white;
+    background: green;
+}
+@media screen and (max-width:767px){
+    .na{
+        font-size: 2rem;
+    }
+    .inp{
+        font-size: 2rem;
+    }
+    .em{
+        font-size: 2rem;
+    }
+    .sub{
+        font-size: 2rem;
+    }
+}
