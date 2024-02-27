@@ -221,6 +221,7 @@ h1{
 }
 p{
     font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 .box p{
     padding-left: 6px;
@@ -244,11 +245,14 @@ p{
         margin-bottom: 0.3rem;
     }
     .box{
-        width: 25rem;
-        height: 19rem;
+        width: 21rem;
+        height: 22rem;
     }
     p{
         font-size: 1rem;
+    }
+    .foot{
+        margin-left: 9rem;
     }
 }
 #services{
